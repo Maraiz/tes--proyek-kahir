@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgb(21, 55, 55);
+    color: white;
+    margin-bottom: 30px;
+}
+
+main {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section > h2 {
+    color: steelblue;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form .input {
+    margin-bottom: 15px;
+}
+
+label {
+   display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+section form input {
+    padding: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: px;
+    font-size: 16px;
+}
+
+section form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  section form .inputBox label {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+
+  .inputBox input {
+    width: auto;
+    cursor: pointer;
+    transform: scale(1.3);
+  }
+
+  section > form > button > span {
+    font-weight: bold;
+}
+
+  button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgb(2, 121, 167);
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0b3154;
+  }
+
+  #bookFormSubmit {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    /* background-color: #6a89cc; */
+  }
+
+    #searchBook {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+  #searchBook label {
+    flex: 0 0 60px;
+  }
+
+  #searchBookTitle {
+    flex: 1;
+  }
+
+  /* #searchSubmit {
+    background-color: #6a89cc;
+  } */
+
+  /* #incompleteBookList,
+  #completeBookList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  } */
+
+
+  /* .bukuList {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #6a89cc;
+    transition: transform 0.2s;
+  }
+
+  .bukuList:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  } */
+
+  #incompleteBookList,
+  #completeBookList {
+    display: flex;
+  }
+
+  [data-testid="bookItem"] {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #6a89cc;
+    transition: transform 0.2s;
+  }
+  
+  [data-testid="bookItem"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  [data-testid="bookItemTitle"] {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #2c3e50;
+  }
+  
+  [data-testid="bookItemAuthor"],
+  [data-testid="bookItemYear"] {
+    color: #7f8c8d;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  [data-testid="bookItem"] div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  
+  [data-testid="bookItemIsCompleteButton"] {
+    background-color: #27ae60;
+  }
+  
+  [data-testid="bookItemDeleteButton"] {
+    background-color: #e74c3c;
+  }
+  
+  [data-testid="bookItemEditButton"] {
+    background-color: #f39c12;
+  }
+  
+  [data-testid="bookItemIsCompleteButton"]:hover {
+    background-color: #219653;
+  }
+  
+  [data-testid="bookItemDeleteButton"]:hover {
+    background-color: #c0392b;
+  }
+  
+  [data-testid="bookItemEditButton"]:hover {
+    background-color: #d35400;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    #incompleteBookList,
+    #completeBookList {
+      grid-template-columns: 1fr;
+    }
+    
+    #searchBook {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    #searchBook label {
+      flex: initial;
+    }
+  }

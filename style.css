@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section.tambahBuku {
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.tambahBuku h2 {
+    text-align: center;
+}
+
+section > form > .input > input {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+section form .input {
+    margin: 10px 0;
+}
+
+section form button {
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    display: block;
+    background-color: rgb(106, 106, 216);
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section form button span {
+ font-weight: bold;
+}
+
+
